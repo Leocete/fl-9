@@ -106,7 +106,7 @@ article {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   padding-left: 10px;
-  border: 1, 5px solid #757575; }
+  border: 1px solid #757575; }
 #contact .form-section textarea {
   height: 100px; }
 #contact .form-section input[type=submit] {
