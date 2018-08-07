@@ -106,7 +106,7 @@ article {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 10px;
   padding-left: 10px;
-  border: 1, 5px solid #CFD8DC; }
+  border: 1px solid #CFD8DC; }
 #contact .form-section textarea {
   height: 100px; }
 #contact .form-section input[type=submit] {
