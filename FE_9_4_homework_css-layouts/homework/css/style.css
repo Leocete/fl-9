@@ -1,0 +1,321 @@
+
+@font-face {
+    font-family: "Open Sans Regular";
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {   
+    font-family: 'Open Sans', sans-serif; 
+    overflow-x: hidden; 
+}
+main {
+    background: #F3F3F3;
+}
+/* Header Section */
+#header {
+    width: 100%;
+    height: 100vh;
+    background: #6f6f6f url("../img/apples.jpg") center center no-repeat;
+    object-fit: cover;
+}
+nav {
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+    margin-left: 50px;
+}
+#navdiv ul{
+    float: right;
+    margin-right: 100px;
+}
+#navdiv ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+#navdiv ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 1.1em;
+}
+#navdiv ul li:hover {
+    background: #6f6f6f;
+    transition: all 0.50s; 
+}
+#logo {
+    color: #FFF;
+    height: 80px;
+    width: 200px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+}
+.btn {
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    bottom: 190px;
+    width: 180px;
+    text-align: center;
+    position: absolute;
+}
+
+.btn:hover {
+    background: rgba(0,0,0,0.6);
+    border: 2px solid rgb(182, 178, 178);
+    color: #fff;
+    transition: all 0.50s;
+}
+.brandName {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right:0;
+    top: 290px;
+}
+h1#brandheader {
+    font-size: 4em;
+    font-weight: 100;
+    letter-spacing: 10px;
+    line-height: 1.2;
+}
+h1 > span {
+    font-size: 1.5em;
+}
+/* Second section (about) */
+.sectionAbout { 
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+}
+.aboutHeader {
+    width: 50%;
+    padding: 2em;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    font-size: 2em;
+    font-weight: normal;
+}
+.aboutText {
+    width: 50%;
+    padding: 2em;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 1.3em;
+}
+/* Third section (article) */
+#sectionArticle {
+    background: #F3F3F3;
+    margin: 0 auto;
+}
+#articleHeader{
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    font-weight: normal;
+}
+.featuredArticle {
+	display: flex;
+	justify-content: center;
+    margin-bottom: 20px;
+}
+.image {
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+	width: 60%;
+    background-size: cover;
+}
+.image img {
+	height: 100%;
+	filter: brightness(80%);
+}
+
+.featuredArticle:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.image h5 {
+	position: relative;
+	bottom: 40px;
+	left: 20px;
+}
+.image a {
+	text-decoration: none;
+	color: #FFF;
+}
+.image button {
+	position: absolute;
+	top: 30px;
+	right: 70px;
+    background-color: rgba(0,0,0, 0.4);
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #FFF;
+    padding: 10px 15px;
+    display: inline-block;
+    cursor:pointer;
+}
+.image button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.featuredArticle p {
+	text-align: center;
+    align-self: center;
+    margin: 20px;
+	font-size: 1em;
+	width: 40%
+}
+.subscribe {
+	width: 90%;
+	background-color: #FFF;
+	margin: 30px auto;
+	padding: 50px 30px 90px 30px;
+    vertical-align: center;
+}
+.subscribe h2 {
+	float: left;
+	width: 30%;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.subscribe .input {
+	float: right;
+	width: 60%;
+}
+#inputMail {
+	width: 79%;
+	height: 50px;
+	border: 1px solid #343638;
+    background-color: #f3f3f3;
+    padding-left: 10px
+}
+#inputMail::placeholder {
+	color: #343638;
+}
+#inputSubmit {
+	width: 11%;
+	height: 52px;
+	margin-left: -5px;
+	background-color: #343638;
+	color: #FFF;
+	border: 1px solid #000;
+}
+#inputSubmit:hover, #inputMail:hover {
+	background-color: rgb(185, 176, 176);
+	color: #343638;
+}
+/* Footer section */
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.footerAbout,
+.footerTweet,
+.footerContact,
+.footerNewsletter{
+    width: 23%;
+}
+.footerAbout{
+    padding-left: 30px;
+}
+
+.footerHeader {
+    margin-bottom: 20px;
+}
+
+.footerText {
+    color: #A4A4A4;
+}
+
+.footer-tweet-text {
+    font-style: italic;
+    color: #A4A4A4;
+}
+
+.footer-tweet-text-time {
+    color: #E8E8E8;
+    margin-top: 5px;
+}
+
+.footerContact {
+    text-decoration: none;
+    color: #A4A4A4;
+    word-wrap: break-word;
+ }
+ .footerContact h4{
+     color: #000;
+ }
+
+.footerForm {
+    margin-top: 10px;
+    flex-grow: 0;
+}
+
+.footerForm-email {
+    flex-grow: 0;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.footerForm-btn {
+    padding: 12px 10px;
+    margin-left: -5px;
+    background-color: #343638;
+	color: #FFF;
+	border: 1px solid #000;
+}
+.footerForm-btn:hover {
+    background-color: rgb(185, 176, 176);
+    color: #343638;
+}
+
+.footerBottom {
+    border-top: 2px solid #f0f0f0;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.footerCopyright {
+    color: #9E9E9E;
+}
+
+.footerNavigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footernavitem {
+    color: #343638;
+    text-decoration: none;
+}
+
+.footernavitem:hover {
+    color: #9E9E9E;
+}
