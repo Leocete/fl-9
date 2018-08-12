@@ -206,6 +206,7 @@ h1 > span {
     margin-right: 30px;
     padding-top: 10px;
     padding-left: 50px;
+    font-weight: normal;
 }
 .subscribe .input {
     display: flex;
