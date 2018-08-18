@@ -30,21 +30,21 @@ function game() {
         Possible prize on current attempt: ${possiblePrize}$;
         `)
         console.log(gameNumber, userNumber)
-        if(userNumber === gameNumber) { 
+        	if(userNumber === gameNumber) { 
 			alert('Congratulation!   Your prize is: ' + Math.floor(possiblePrize));            
-			if(confirm('You want to continue?')) {
-                prizeAmount = Math.floor(possiblePrize) + prizeAmount;
-				maxNumber *= 2; 
-                attemptsNumber = 3;
-                gameNumber = randomNumber(maxNumber);
-				return game() 
-			} else {
-				break;
-			}
+				if(confirm('You want to continue?')) {
+                			prizeAmount = Math.floor(possiblePrize) + prizeAmount;
+					maxNumber *= 2; 
+                			attemptsNumber = 3;
+               		 		gameNumber = randomNumber(maxNumber);
+					return game() 
+				} else {
+					break;
+				}
 		} else {
-            possiblePrize = Math.floor(possiblePrize / 2);
-            attemptsNumber = --attemptsNumber;
-        }
+            		possiblePrize = Math.floor(possiblePrize / 2);
+            		attemptsNumber = --attemptsNumber;
+        	}
 		
 	}
 
