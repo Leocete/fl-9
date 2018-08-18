@@ -32,7 +32,7 @@ function game() {
                     } else {
                         break;
                     } 
-                } 
+                } // end of main if clause
     } // end of the for loop
 } // end of the function
 
