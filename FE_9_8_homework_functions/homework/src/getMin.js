@@ -1,15 +1,5 @@
-function getMin(a,b,c) {
-    if (a > b) {
-        if (b > c) {
-            return c;
-        } else {
-            return b;
-        }
-    } else {
-        if (a > c) {
-            return c;
-        } else {
-            return a;
-        }  
-    }    
+function getMin(a, b, c) {
+    return a > b
+        ? b > c ? c : b
+        : a > c ? c : a;
 }
