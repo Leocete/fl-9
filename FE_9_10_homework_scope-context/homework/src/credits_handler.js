@@ -11,8 +11,6 @@ function userCard(number) {
     key: number 
     }
 
-    return console.log(cardInformation)
-
     // getCardOptions - return iformation about card
     function getCardOptions() {
       return cardInformation;
@@ -60,7 +58,13 @@ function userCard(number) {
         cardInformation.historyLogs.push(input);
     }
 
-
+    return {
+        getCardOptions,
+        putCredits,
+        takeCredits,
+        setTransactionLimit,
+        transferCredits
+    };
 }
 
 // addCard/getcardbyKey
@@ -70,7 +74,7 @@ class UserAccount {
         this.cards = [];
     }
     addCard() {
-        if (this.cards.length < parameters.cardsLimit) {
+        if (this.cards.length > parameters.cardsLimit) {
             console.log('You\'ve got too many cards')
         } else {
             this.cards.push(userCard(this.cards.length + 1));
@@ -80,4 +84,3 @@ class UserAccount {
         return this.cards[number - 1];
     }
 }
-
